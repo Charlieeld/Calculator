@@ -24,7 +24,7 @@ function updateDisplay(number) {
     currentOperand.innerText = currentNum
 }
 
-//forEach to run over 
+//forEach to run over operators
 operationButtons.forEach(chosenOperator => {
     chosenOperator.addEventListener('click', (e) => {
         if(e.target.classList.contains('divide')) {
