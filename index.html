@@ -8,16 +8,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
+<!-- create container for the calculator -->
     <div class="container d-flex justify-content-center">
         <div class="card bg-secondary mt-5 shadow" style="width: 24rem; height: 30rem;">
+            <!-- Display -->
             <div class="container d-grid justify-content-center">
                 <div class="display-screen bg-light rounded-2 mt-5 d-flex flex-column p-2" style="height: 6rem; width: 20rem;">
+                    <!-- Display output -->
                     <div data-previous-operand class="previous-operand d-flex justify-content-end "></div>
                     <div data-current-operand class="current-operand d-flex justify-content-end">0</div>
                 </div>
+                <!-- container for numbers and opertors -->
                 <div class="container-fluid mt-4">
                     <div class="row m-2 justify-content-center">
                         <div class="col-6">
+                            <!-- buttons including operators and numbers -->
                             <button data-clear class="btn btn-light" style="height: 3rem; width: 7rem;">Clear</button>
                         </div>
                         <div class="col-6">

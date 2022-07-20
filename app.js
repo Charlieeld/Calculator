@@ -1,7 +1,9 @@
+// create variables for numbers and operator
 let currentNum = '';
 let previousNum = '';
 let operator = "";
 
+// Storing all HTML elements in variables
 const numberButtons = document.querySelectorAll('[data-number]')
 const operationButtons = document.querySelectorAll('[data-operation]')
 const equalsButton = document.querySelector('[data-equals]')
@@ -10,14 +12,14 @@ const allClearButton = document.querySelector('[data-clear]')
 const previousOperand = document.querySelector('[data-previous-operand]')
 const currentOperand = document.querySelector('[data-current-operand]')
 
- 
+// Foreach to find out when a number button has been pressed
 numberButtons.forEach(button => {
     button.addEventListener('click', (e) => {
         updateDisplay(e.target.textContent);
     });
 });
 
-
+// function to update the display with current
 function updateDisplay(number) {
   if(currentNum.length <= 9)  
     currentNum += number
