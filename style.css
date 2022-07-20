@@ -1,0 +1,10 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.previous-operand, 
+.current-operand {
+    font-size: 20px;
+    font-weight: 600;
+}
+
